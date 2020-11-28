@@ -4,6 +4,8 @@
 #include<QSqlError>
 #include<QSqlQuery>
 
+//Test mtaa l git
+
 class connection
 {
 public:
