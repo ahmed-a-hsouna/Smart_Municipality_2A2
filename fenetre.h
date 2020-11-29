@@ -76,9 +76,6 @@ private slots:
 
     void on_tab_citoyent_activated(const QModelIndex &index);
 
-    void on_pushButton_37_clicked();
-
-    void on_pushButton_38_clicked();
 
     void on_radioButton_3_clicked();
 
