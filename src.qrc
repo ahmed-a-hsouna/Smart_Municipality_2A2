@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>src.qrc</file>
+    </qresource>
+    <qresource prefix="/scrc">
+        <file>backg.jpg</file>
+    </qresource>
+</RCC>
