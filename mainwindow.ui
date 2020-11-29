@@ -36,6 +36,9 @@
         <height>511</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(233,248,255);</string>
+      </property>
       <property name="title">
        <string>Affichage des employés</string>
       </property>
@@ -47,6 +50,18 @@
          <width>91</width>
          <height>28</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+padding: 5px;
+border-radius: 5px;
+background-color:rgb(101, 190, 155);
+font-weight: bold;
+}
+QPushButton:hover
+{
+color :white;
+}</string>
        </property>
        <property name="text">
         <string>supprimer</string>
@@ -71,6 +86,18 @@
          <height>28</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+padding: 5px;
+border-radius: 5px;
+background-color:rgb(101, 190, 155);
+font-weight: bold;
+}
+QPushButton:hover
+{
+color :white;
+}</string>
+       </property>
        <property name="text">
         <string>supprimer tout </string>
        </property>
@@ -83,6 +110,18 @@
          <width>93</width>
          <height>28</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+padding: 5px;
+border-radius: 5px;
+background-color:rgb(101, 190, 155);
+font-weight: bold;
+}
+QPushButton:hover
+{
+color :white;
+}</string>
        </property>
        <property name="text">
         <string>tri </string>
@@ -123,6 +162,9 @@
         <height>451</height>
        </rect>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(233,248,255);</string>
+      </property>
       <property name="title">
        <string>Affichage des départements</string>
       </property>
@@ -145,6 +187,18 @@
          <height>28</height>
         </rect>
        </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+padding: 5px;
+border-radius: 5px;
+background-color:rgb(101, 190, 155);
+font-weight: bold;
+}
+QPushButton:hover
+{
+color :white;
+}</string>
+       </property>
        <property name="text">
         <string>supprimer tout</string>
        </property>
@@ -157,6 +211,18 @@
          <width>93</width>
          <height>28</height>
         </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton {
+padding: 5px;
+border-radius: 5px;
+background-color:rgb(101, 190, 155);
+font-weight: bold;
+}
+QPushButton:hover
+{
+color :white;
+}</string>
        </property>
        <property name="text">
         <string>tri A..Z</string>
@@ -171,6 +237,9 @@
         <width>511</width>
         <height>211</height>
        </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgb(233,248,255);</string>
       </property>
       <property name="currentIndex">
        <number>0</number>
@@ -269,6 +338,18 @@
            <height>31</height>
           </rect>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+padding: 5px;
+border-radius: 5px;
+background-color:rgb(101, 190, 155);
+font-weight: bold;
+}
+QPushButton:hover
+{
+color :white;
+}</string>
+         </property>
          <property name="text">
           <string>ajouter</string>
          </property>
@@ -328,6 +409,18 @@
            <height>28</height>
           </rect>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+padding: 5px;
+border-radius: 5px;
+background-color:rgb(101, 190, 155);
+font-weight: bold;
+}
+QPushButton:hover
+{
+color :white;
+}</string>
+         </property>
          <property name="text">
           <string>Modifier</string>
          </property>
@@ -341,6 +434,18 @@
            <height>28</height>
           </rect>
          </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+padding: 5px;
+border-radius: 5px;
+background-color:rgb(101, 190, 155);
+font-weight: bold;
+}
+QPushButton:hover
+{
+color :white;
+}</string>
+         </property>
          <property name="text">
           <string>PDF</string>
          </property>
@@ -353,6 +458,18 @@
            <width>93</width>
            <height>28</height>
           </rect>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+padding: 5px;
+border-radius: 5px;
+background-color:rgb(101, 190, 155);
+font-weight: bold;
+}
+QPushButton:hover
+{
+color :white;
+}</string>
          </property>
          <property name="text">
           <string>rechercher</string>
