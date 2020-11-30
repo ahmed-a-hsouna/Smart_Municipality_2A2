@@ -291,6 +291,8 @@ void MainWindow::on_pushButton_4_clicked()
                     QPdfWriter pdf(pdf_name);
                     QPainter painter(&pdf);
 
+                    painter.drawPixmap(QRect(7600,70,2000,2600),QPixmap("D:/amine/Desktop/Ra7/Ra7.png"));
+                                          painter.drawRect(0,3000,9600,500);
 
                     painter.setPen(Qt::blue);
                     painter.drawText(3000,1500,"DEV SPACE");
