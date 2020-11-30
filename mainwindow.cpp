@@ -26,6 +26,10 @@ MainWindow::MainWindow(QWidget *parent)
 
 {
 ui->setupUi(this);
+    son=new QSound("D:/amine/Desktop/Ra7/bref_1.WAV");
+     ui->lineEdit_CIN->setValidator(new QIntValidator(00000000,99999999,this));
+     ui->lineEdit_numero->setValidator(new QIntValidator(00000000,99999999,this));
+     ui->id_dep_2->setValidator(new QIntValidator(00000000,99999999,this));
 ui->tableView_employes->setModel(z.afficher());
 }
 
@@ -38,6 +42,7 @@ MainWindow::~MainWindow()
 
 void MainWindow::on_pushButton_ajouteremploye_clicked()
 {
+    son->play();
     int CIN = ui->lineEdit_CIN->text().toInt();
 
         QString nom=ui->lineEdit_nom->text();
@@ -80,9 +85,10 @@ return aff;
 }
 void MainWindow::on_pushButton_24_clicked()
 {
-    int k=getselectedEmploye();
-    //int CIN= ui->lineEdit_supprimer->text().toInt();
-    bool test=z.supprimer(k);
+    son->play();
+    //int k=getselectedEmploye();
+    int CINe= ui->lineEdit_CIN->text().toInt();
+    bool test=z.supprimer(CINe);
 
         if(test){
            ui->tableView_employes->setModel(z.afficher());
@@ -113,6 +119,7 @@ void MainWindow::on_pushButton_ajouteremploye_2_clicked()
 
 void MainWindow::on_pushButton_10_clicked()
 {
+    son->play();
     employe c(ui->lineEdit_CIN->text().toInt(),ui->lineEdit_nom->text(),ui->lineEdit_prenom->text(),ui->lineEdit_numero->text().toInt(),ui->lineEdit_adresse->text());
         c.modifier(getselectedEmploye());
          ui->tableView_employes->setModel(z.afficher());
@@ -126,6 +133,7 @@ void MainWindow::on_pushButton_10_clicked()
 
 void MainWindow::on_pushButton_22_clicked()
 {
+    son->play();
     int id = ui->id_dep_2->text().toInt();
      int nbre = ui->lineEdit_nbrdesemployes_2->text().toInt();
       int bud = ui->lineEdit_budget_2->text().toInt();
@@ -152,6 +160,7 @@ void MainWindow::on_pushButton_22_clicked()
 
 void MainWindow::on_pushButton_26_clicked()
 {
+    son->play();
     //int k=getselectedDepartement();
     int id_dep= ui->id_dep_2->text().toInt();
     bool test=d.supprimer(id_dep);
@@ -172,7 +181,9 @@ void MainWindow::on_pushButton_26_clicked()
 }
 
 void MainWindow::on_pushButton_30_clicked()
-{departement d(ui->id_dep_2->text().toInt(),ui->lineEdit_nomdep_2->text(),ui->lineEdit_nbrdesemployes_2->text().toInt(),ui->lineEdit_budget_2->text().toInt());
+{
+    son->play();
+    departement d(ui->id_dep_2->text().toInt(),ui->lineEdit_nomdep_2->text(),ui->lineEdit_nbrdesemployes_2->text().toInt(),ui->lineEdit_budget_2->text().toInt());
     d.modifier();
      ui->tableView_depart->setModel(d.afficher());
     ui->id_dep_2->setText("");
@@ -185,6 +196,7 @@ void MainWindow::on_pushButton_30_clicked()
 
 void MainWindow::on_pushButton_2_clicked()
 {
+    son->play();
     bool test=d.supprimerTout();
 
     QMessageBox::StandardButton reply =QMessageBox::information(this,"supprimer la liste","Etes-vous sur?",QMessageBox::Yes|QMessageBox::No);
@@ -208,6 +220,7 @@ void MainWindow::on_pushButton_2_clicked()
 
 void MainWindow::on_pushButton_3_clicked()
 {
+    son->play();
     QString filename="fichier.pdf";
          //Settings
          QPrinter printer;
@@ -227,7 +240,9 @@ void MainWindow::on_pushButton_3_clicked()
 }
 
 void MainWindow::on_pushButton_5_clicked()
-{ bool test=z.supprimerTout();
+{
+    son->play();
+    bool test=z.supprimerTout();
 
     QMessageBox::StandardButton reply =QMessageBox::information(this,"supprimer la liste","Etes-vous sur?",QMessageBox::Yes|QMessageBox::No);
 
@@ -250,6 +265,7 @@ void MainWindow::on_pushButton_5_clicked()
 
 void MainWindow::on_pushButton_4_clicked()
 {
+    son->play();
     /*QString filename="fichier.pdf";
          //Settings
          QPrinter printer;
@@ -326,6 +342,7 @@ void MainWindow::on_pushButton_4_clicked()
 
 void MainWindow::on_pushButton_6_clicked()
 {
+    son->play();
   /* employe v;
 
             v.rechercher(ui->rec->text(),ui->tableView_employes);;
@@ -359,11 +376,13 @@ void MainWindow::on_pushButton_6_clicked()
 
 void MainWindow::on_pushButton_8_clicked()
 {
+    son->play();
     ui->tableView_depart->setModel(d.afficherTriNOM());
 }
 
 void MainWindow::on_pushButton_9_clicked()
 {
+    son->play();
     //ui->tableView_employes->setModel(z.afficherTriNOM());
 
         QString tri=ui->comboBox->currentText();

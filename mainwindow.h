@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "departement.h"
 #include <QPushButton>
+#include <QSound>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -63,6 +64,6 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
-
+    QSound *son;
 };
 #endif // MAINWINDOW_H
