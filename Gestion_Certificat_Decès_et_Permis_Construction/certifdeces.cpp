@@ -91,7 +91,7 @@ QSqlQueryModel * Certifdeces::afficher_certif()
 
    return model;
        }
- QSqlQueryModel *Certifdeces::triercroi() 
+ QSqlQueryModel *Certifdeces::triercroi() //ml A-Z NOM
  {
      QSqlQuery * q = new  QSqlQuery ();
             QSqlQueryModel * model = new  QSqlQueryModel ();
@@ -99,7 +99,7 @@ QSqlQueryModel * Certifdeces::afficher_certif()
             q->exec();
             model->setQuery(*q);
             return model;
-      
+      //ml kbir l sghir
         /*    QSqlQuery * q = new  QSqlQuery ();
                    QSqlQueryModel * model = new  QSqlQueryModel ();
                    q->prepare("SELECT * FROM certifdeces order by codepostale DESC");
@@ -107,7 +107,7 @@ QSqlQueryModel * Certifdeces::afficher_certif()
                    model->setQuery(*q);
                    return model;*/
  }
- QSqlQueryModel *Certifdeces::trierdec() 
+ QSqlQueryModel *Certifdeces::trierdec() //ml Z-A NOM
  {
      QSqlQuery * q = new  QSqlQuery ();
             QSqlQueryModel * model = new  QSqlQueryModel ();
@@ -115,7 +115,7 @@ QSqlQueryModel * Certifdeces::afficher_certif()
             q->exec();
             model->setQuery(*q);
             return model;
-  
+      //ml kbir l sghir
         /*    QSqlQuery * q = new  QSqlQuery ();
                    QSqlQueryModel * model = new  QSqlQueryModel ();
                    q->prepare("SELECT * FROM certifdeces order by codepostale DESC");
