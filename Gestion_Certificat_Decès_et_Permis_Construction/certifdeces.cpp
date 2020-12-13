@@ -122,6 +122,7 @@ QSqlQueryModel * Certifdeces::afficher_certif()
                    q->exec();
                    model->setQuery(*q);
                    return model;*/
+//model
  }
  void Certifdeces::CREATION_PDF()
  {
